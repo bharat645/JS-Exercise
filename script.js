@@ -1016,8 +1016,124 @@ var availableStock = 10;
 var subtotal = productPrice*quantity;
 console.log("subtotal: ", subtotal);
   
-var discountAmount = subtotal-discount
+var discountAmount = discount*quantity
 console.log("discountAmount: ", discountAmount);
 
 var shippingCharge = shipping*quantity
-console.log("shippingCharge: "  )
+console.log("shippingCharge: ", shippingCharge);
+
+var finalAmount = subtotal- discountAmount+shippingCharge;
+console.log("finalAmount:", finalAmount)
+
+var remainingBalance = walletBalance-finalAmount;
+console.log("Remaining Balance", remainingBalance)
+
+// ### Part 2 — Assignment Operators
+
+
+subtotal -= discountAmount;
+
+console.log("After discount:", subtotal);
+
+
+subtotal += shippingCharge;
+
+console.log("After shipping:", subtotal);
+
+
+walletBalance -= finalAmount;
+
+console.log("Remaining wallet balance:", walletBalance);
+
+
+// ### Part 3 — Comparisons
+
+
+console.log("Subtotal > ₹10,000:", subtotal > 10000)
+console.log("Quantity >= 3:", quantity >= 3)
+console.log("Available stock >= quantity:", availableStock >= quantity)
+console.log("Discount > ₹1,000:", discount > 1000)
+console.log("Wallet balance >= final amount:",walletBalance >= finalAmount)
+console.log("Final amount < ₹15,000:", finalAmount < 15000)
+
+// ### Part 4 — Logical Operators
+
+var stockAvailable = availableStock >= quantity;
+var balanceAvailable = walletBalance >= finalAmount;
+var discountAvailable = discount > 0;
+
+console.log("Stock Available:", stockAvailable);
+console.log("Balance Available:", balanceAvailable);
+console.log("Discount Available:", discountAvailable);
+
+
+var canPurchase = stockAvailable && balanceAvailable;
+
+console.log("Can Purchase:", canPurchase);
+
+var specialCustomer = isMember && hasCoupon;
+
+console.log("Special Customer:", specialCustomer);
+
+
+var notMember = !isMember;
+
+console.log("Not Member:", notMember);
+
+// ### Part 5 — Ternary Operator
+
+var purchaseStatus = stockAvailable && balanceAvailable ? "Purchase Successful" : "Purchase Failed";
+
+console.log(purchaseStatus);
+
+// ### Part 6 — Increment / Decrement
+var orderCount = 10;
+var stock = 50;
+var quantity = 3;
+
+orderCount++;
+
+stock -= quantity;
+
+console.log("Order Count:", orderCount);
+console.log("Stock:", stock);
+
+
+
+// ### Part 7 — Operator Precedence
+
+var result1 = 1000 + 500 * 2 - 200 / 2;
+console.log(result1);
+
+var result2 = (1000 + 500) * 2 - 200 / 2;
+console.log(result2);
+
+
+
+// ### Part 8 — Final Output
+
+console.log("====================================")
+console.log("         ONLINE ORDER SYSTEM   ")
+console.log("====================================")
+console.log("Product Price:", productPrice)
+console.log("Quantity:",quantity)
+
+console.log("Subtotal:", subtotal)
+console.log("Discount:",discount)
+console.log("Shipping:", shipping)
+console.log("Final Amount:",finalAmount)
+console.log("Wallet Balance:",walletBalance)
+
+console.log("Remaining Balance:",remainingBalance)
+
+console.log("Stock Available:",stockAvailable)
+console.log("Member:",isMember)
+
+console.log("Coupon Available:", hasCoupon)
+console.log("Can Purchase:", canPurchase)
+
+console.log("Special Customer:", specialCustomer)
+
+console.log("Purchase Status:",purchaseStatus)
+console.log("Remaining balance:", remainingBalance)
+console.log("====================================")
