@@ -163,6 +163,8 @@
 
 // Lecture = 2 Datatype & typeof
  
+
+
 // Exercise 1 — Identify Data Types
 
 // var name = "Hello";
@@ -172,6 +174,8 @@
 // var e = false;
 // var f;
 // var g = null;
+
+// Print data type of every variable and typeof .
 
 // console.log("value =",name);
 // console.log("type=",typeof(name))
@@ -214,6 +218,7 @@
 // var  college= "cgc";
 // var profile = null;
 
+// Print data type of every variable and typeof .
 
 // console.log("Student name =",name);
 // console.log("type=",typeof(name))
@@ -543,3 +548,476 @@
 
 // // 21 = number
 // // "21" = string
+
+
+
+
+
+
+// // operators Exercise
+
+// // Exercise 1 — Advanced Salary Calculator
+
+// var basicSalary = 60000;
+// var bonus = 12000;
+// var allowance = 8000;
+// var tax = 7500;
+// var insurance = 2500;
+
+// var grossSalary = basicSalary + bonus + allowance;
+// var totalDeductions = tax + insurance;
+// var netSalary = grossSalary - totalDeductions;
+
+// console.log("Gross Salary:", grossSalary);
+// console.log("Total Deductions:", totalDeductions);
+// console.log("Net Salary:", netSalary);
+
+// console.log(netSalary > 60000);
+// console.log(grossSalary < 75000);
+// console.log( tax > insurance);
+
+
+
+// ## Exercise 2 — Shopping Cart
+
+
+// var productPrice = 2499;
+// var quantity = 4;
+// var discount = 1200;
+// var deliveryCharge = 150;
+// var walletBalance = 10000;
+
+// var subtotal = productPrice * quantity;
+// var discountPrice = subtotal - discount;
+// var finalPrice = discountPrice;
+// var RemainingBalance = walletBalance - finalPrice;
+
+// console.log("subtotal =", subtotal);
+// console.log("discountPrice =", discountPrice);
+// console.log("finalPrice =", finalPrice+deliveryCharge);
+// console.log("RemainingBalance =", RemainingBalance);
+
+
+// console.log(subtotal > 5000);           
+// console.log(finalPrice < walletBalance); 
+// console.log(quantity >= 3);              
+// console.log(finalPrice < 10000);         
+// console.log(discount === 1200);   
+
+
+// ## Exercise 3 — Student Result Analyzer
+
+// var english = 82;
+// var maths = 91;
+// var science = 76;
+// var computer = 95;
+// var punjabi = 88;
+
+
+// var Totalmarks = english+maths+science+computer+punjabi;
+// var percentage = (Totalmarks/500)*100;
+// var average = (english+maths+science+computer+punjabi)/5;
+
+// console.log("total marks=",Totalmarks);
+// console.log("percentage",percentage);
+// console.log("average",average)
+
+// // Then create expressions to check:
+// console.log("Percentage >= 80=",percentage >= 80)
+// console.log("Maths > English=",maths > english)
+// console.log("Computer > 90=",computer > 90)
+// console.log("All marks >= 40=", english>=40 && maths >=40 && science >=40 && computer >=40 && punjabi >=40 )
+// console.log("At least one subject > 90=", english>90 || maths >90  || science >90|| computer >90|| punjabi >90 )
+// console.log( percentage = (60 / 90) * 100);
+// var result = percentage >= 60 
+//     ? "Student is eligible for scholarship"
+//     : "Student is not eligible for scholarship";
+//     console.log("Result",result)
+
+
+    // # Exercise 4 — Advanced Comparison Challenge
+
+
+// var a = 10;
+// var b = "10";
+// var c = 20;
+// var d = "20";
+
+// console.log("a == b=",a == b) 
+// console.log("a === b:",a === b)
+// console.log("a != b:",a != b)
+// console.log("a !== b:",a !== b)
+
+// console.log("c == d:",c == d)
+// console.log("c === d:",c === d)
+// console.log("c != d:",c != d)
+// console.log("c !== d:",c !== d)
+
+// console.log("a < c:",a < c)
+// console.log("a <= c:",a <= c)
+// console.log("a > c:",a > c)
+// console.log("a>= c:",a >= c)
+
+
+// ## Exercise 5 — Bank Transaction System
+
+
+
+// var balance = 50000;
+// var deposit = 15000;
+// var withdrawal = 12000;
+// var transfer = 10000;
+
+
+// console.log(balance += deposit);      
+// console.log(balance -= withdrawal);    
+// console.log(balance -= transfer);      
+
+// console.log("Final Balance:", balance);
+
+
+// console.log(balance > 50000);
+
+// console.log(balance >= 40000);
+
+// console.log(withdrawal < deposit);
+
+// console.log(balance >= 20000);
+
+// console.log(balance >= 40000 && balance <= 70000);
+
+// var status = balance >= 40000 ? "Healthy Balance" : "Low Balance";
+
+// console.log(status);
+
+
+
+
+
+// ## Exercise 6 — Employee Bonus Eligibility
+
+// var salary = 85000;
+// var experience = 6;
+// var performanceScore = 87;
+// var attendance = 95;
+
+// console.log("Salary: ",salary >= 50000 )
+// console.log("Experience: ", experience >= 5 )
+// console.log("Performance: ", performanceScore >= 80)
+// console.log("Attendance: ", attendance >= 90 )
+
+// console.log(salary >= 50000 && experience >= 5)
+// console.log(performance >= 80 && attendance >= 90)
+// console.log(experience >= 5 || performanceScore >= 90)
+
+// var Employee = performanceScore >= 80 ? "Bonus Eligible" : "Bonus Not Eligible";
+// console.log(Employee)
+
+
+// ## Exercise 7 — Electricity Bill
+
+// var units = 450;
+// var rate = 8;
+// var fixedCharge = 150;
+// var discount = 200;
+
+// var energycost = units*rate
+// var TotalBeforeDiscount = (units*rate)+fixedCharge 
+// FinalBill= (units*rate)+fixedCharge-discount
+
+// console.log(energycost) 
+// console.log(TotalBeforeDiscount )
+// console.log(FinalBill)
+
+
+// console.log("Units > 300:", units > 300)
+// console.log("Units >= 400:",units >= 400)
+// console.log("FinalBill > ₹3,000:", FinalBill > 3000)
+// console.log("Discount < fixedCharge:", discount < fixedCharge )
+// console.log(units >= 200 && units <= 500);
+//  var expensive = units >= 450  ? "are u eligible for discount " : " not eligible for discount"
+// console.log(expensive)
+
+
+// ## Exercise 8 — Movie Ticket System
+// var ticketPrice = 250;
+// var numberOfTickets = 5;
+// var convenienceFee = 30;
+// var discount = 100;
+// var walletBalance = 2000;
+
+// var ticketCost = ticketPrice * numberOfTickets;
+// console.log("Ticket Cost:", ticketCost); 
+
+// console.log("Convenience Fee:", convenienceFee); 
+
+// console.log("Discount:", discount); 
+
+// var finalAmount = ticketCost + convenienceFee - discount;
+// console.log("Final Amount:", finalAmount); 
+
+// var remainingBalance = walletBalance - finalAmount;
+// console.log("Remaining Balance:", remainingBalance); 
+
+// console.log(numberOfTickets >= 5);
+// console.log(finalAmount <= walletBalance); 
+// console.log(finalAmount > 1000); 
+// console.log(discount > 0); 
+// console.log( finalAmount <= walletBalance && numberOfTickets >= 1); 
+
+// var canBuy =
+//     finalAmount <= walletBalance && numberOfTickets >= 1
+//         ? "Customer Can Buy"
+//         : "Customer Cannot Buy";
+
+// console.log(canBuy); 
+
+// # Exercise 9 — Advanced Operator Precedence
+
+
+// console.log(10 + 20 * 3); 
+// // 20* 3 +10 
+// // 70
+
+// console.log((10 + 20) * 3);
+// // 30*3
+// // 90
+
+// console.log(100 / 5 + 10 * 2);
+// // 100/5 + 10*2
+// // 20+ 20
+// // 40
+
+// console.log(100 / (5 + 5) * 2);
+// // 100/ 10 *2
+// // 10*2
+// // 20
+
+// console.log(2 ** 3 * 4);
+// // 32
+
+// console.log(10 + 5 * 2 ** 3);
+// // 50
+
+// console.log((10 + 5) * 2 ** 2);
+// // 60
+
+// console.log(100 - 20 / 5 * 2);
+// // 92
+
+// console.log(50 % 7 + 3 * 4);
+// // 13
+// console.log(2 ** 3 + 4 * 5 - 10 / 2);
+// // (2 ** 3 + 4 * 5 - 5)
+// // (8 + 4 * 5 - 5)
+// // (8 + 20 - 5)
+// // 28 -5
+// // 22
+
+
+// var a = 10;
+
+// console.log(a++);
+// console.log(++a);
+// console.log(a--);
+// console.log(--a);
+// console.log(a);
+
+// 10
+// 12
+// 12
+// 10
+// 10
+
+// var x = 5;
+
+// console.log(x++);
+// console.log(x++);
+// console.log(++x);
+// console.log(x--);
+// console.log(--x);
+// console.log(x);
+
+// 5
+// 6
+// 8
+// 8
+// 6
+// 6
+
+// Explain exactly when the variable changes in:
+
+// x++  this is the post increment
+// ++x  this is the pre increment
+// x--  this is the post decrement 
+// --x  this is the pre decrement
+
+// ## Exercise 11 — Multi-Condition Product System
+
+
+// var price = 3500;
+// var quantity = 3;
+// var stock = 10;
+// var customerBalance = 15000;
+// var isMember = true;
+
+// // Calculate 
+// var totalPrice = price * quantity;
+
+// console.log("Total Price:", totalPrice);
+
+
+// console.log("Quantity is greater than 2:", quantity > 2);
+
+// console.log("Stock is sufficient:", stock >= quantity);
+
+// console.log("Customer has sufficient balance:", customerBalance >= totalPrice);
+
+// console.log("Customer is a member:", isMember);
+
+// console.log("Total is greater than ₹5,000:", totalPrice > 5000);
+
+// // Condition 1
+// var canPurchase = (stock >= quantity) && (customerBalance >= totalPrice);
+
+// console.log("Customer can purchase:", canPurchase);
+
+// //  Condition 2
+// var specialBenefit = isMember && totalPrice > 5000;
+
+// console.log("Special Benefit:", specialBenefit);
+// //  Condition 3
+
+// var noBenefit = !(isMember && totalPrice > 5000);
+
+// console.log("Customer does NOT receive benefit:", noBenefit);
+
+
+// ## Exercise 12 — Car Finance Calculator
+// var carPrice = 1600000;
+// var downPayment = 400000;
+// var loanAmount = 1100000;
+// var monthlyEMI = 25000;
+// var months = 60;
+
+
+// var TotalEMIAmount= monthlyEMI*months;
+// console.log(TotalEMIAmount)
+// console.log("Total Cost of Car:", carPrice);
+
+// console.log( downPayment > 300000)
+// console.log( loanAmount > 1000000)
+// console.log( monthlyEMI > 20000)
+// console.log( monthlyEMI > 20000)
+// console.log( loanAmount ===1100000)
+// console.log( TotalEMIAmount > carPrice)
+// console.log( months >= 60)
+// console.log( monthlyEMI > 20000)
+
+
+//  var iscarsuitable =
+//     carPrice<= TotalEMIAmount
+//         ? "yes Car is financially suitable"
+//         : "no Car is financially suitable";
+
+// console.log(iscarsuitable); 
+
+
+
+// // ## Exercise 13 — Login System Without `if`
+
+// var correctUsername = "admin";
+// var correctPassword = "12345";
+
+// var enteredUsername = "admin";
+// var enteredPassword = "12345";
+
+// var usernameMatch = enteredUsername === correctUsername;
+
+
+// var passwordMatch = enteredPassword === correctPassword;
+
+// var loginSuccessful = usernameMatch && passwordMatch;
+
+// console.log("Username Match:", usernameMatch);
+// console.log("Password Match:", passwordMatch);
+// console.log("Login Successful:", loginSuccessful);
+
+// var loginSuccessful=  enteredUsername === correctUsername && enteredPassword === correctPassword
+// ? "you are loginSuccessful" : "Invalid Credentials"
+
+// console.log(loginSuccessful)
+
+
+// ## Exercise 14 — E-Commerce Order Analyzer
+
+// var productPrice = 2999;
+// var quantity = 4;
+// var discount = 1500;
+// var shipping = 200;
+// var walletBalance = 15000;
+// var isPremiumMember = true;
+
+
+// var subtotal = productPrice*quantity
+// console.log( "subtotal:", subtotal)
+// var discountAmount= subtotal-discount
+// console.log ( "discounted Amount:",discountAmount)
+// var shippingAmount = shipping*quantity
+// console.log(" shipping", shippingAmount )
+// var finalAmount = discountAmount+ shippingAmount
+// console.log ( "finalAmount", finalAmount)
+
+// console.log("Remaining Wallet Balance:", walletBalance- finalAmount
+// )
+
+// Then create Boolean expressions for:
+
+
+// console.log(subtotal > 10000)
+// console.log(quantity >= 4)
+// console.log(discount > 1000)
+// console.log(isPremiumMember)
+
+// console.log("Wallet balance sufficient:", walletBalance >= finalAmount);
+
+// console.log (quantity >= 3 && isPremiumMember)
+// console.log (subtotal > 10000 || isPremiumMember)
+// console.log (walletBalance && quantity >= 1)
+// console.log(! isPremiumMember)
+// ? "you are loginSuccessful" : "Invalid Credentials"
+//  console.log(finalAmount >= 5000 && finalAmount <= 15000);
+
+// var orderstatus = finalAmount >= 5000 ? "Order Can Be Placed" : "Insufficient Balance";
+
+// console.log(orderstatus);
+
+
+// # Exercise 15 —
+
+// ## Build a Complete Online Purchase Calculator
+
+
+var productPrice = 4999;
+var quantity = 3;
+
+var discount = 2000;
+var shipping = 250;
+
+var walletBalance = 20000;
+
+var isMember = true;
+var hasCoupon = true;
+
+var availableStock = 10;
+
+// ### Part 1 — Calculations
+
+var subtotal = productPrice*quantity;
+console.log("subtotal: ", subtotal);
+  
+var discountAmount = subtotal-discount
+console.log("discountAmount: ", discountAmount);
+
+var shippingCharge = shipping*quantity
+console.log("shippingCharge: "  )
