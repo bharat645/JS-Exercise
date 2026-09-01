@@ -575,6 +575,8 @@
 // console.log(netSalary > 60000);
 // console.log(grossSalary < 75000);
 // console.log( tax > insurance);
+//  console.log(finalAmount >= 50000 && finalAmount <= 80000);
+
 
 
 
@@ -998,142 +1000,353 @@
 // ## Build a Complete Online Purchase Calculator
 
 
-var productPrice = 4999;
-var quantity = 3;
+// var productPrice = 4999;
+// var quantity = 3;
 
-var discount = 2000;
-var shipping = 250;
+// var discount = 2000;
+// var shipping = 250;
 
-var walletBalance = 20000;
+// var walletBalance = 20000;
 
-var isMember = true;
-var hasCoupon = true;
+// var isMember = true;
+// var hasCoupon = true;
 
-var availableStock = 10;
+// var availableStock = 10;
 
-// ### Part 1 — Calculations
+// // ### Part 1 — Calculations
 
-var subtotal = productPrice*quantity;
-console.log("subtotal: ", subtotal);
+// var subtotal = productPrice*quantity;
+// console.log("subtotal: ", subtotal);
   
-var discountAmount = discount*quantity
-console.log("discountAmount: ", discountAmount);
+// var discountAmount = discount*quantity
+// console.log("discountAmount: ", discountAmount);
 
-var shippingCharge = shipping*quantity
-console.log("shippingCharge: ", shippingCharge);
+// var shippingCharge = shipping*quantity
+// console.log("shippingCharge: ", shippingCharge);
 
-var finalAmount = subtotal- discountAmount+shippingCharge;
-console.log("finalAmount:", finalAmount)
+// var finalAmount = subtotal- discountAmount+shippingCharge;
+// console.log("finalAmount:", finalAmount)
 
-var remainingBalance = walletBalance-finalAmount;
-console.log("Remaining Balance", remainingBalance)
+// var remainingBalance = walletBalance-finalAmount;
+// console.log("Remaining Balance", remainingBalance)
 
-// ### Part 2 — Assignment Operators
-
-
-subtotal -= discountAmount;
-
-console.log("After discount:", subtotal);
+// // ### Part 2 — Assignment Operators
 
 
-subtotal += shippingCharge;
+// subtotal -= discountAmount;
 
-console.log("After shipping:", subtotal);
-
-
-walletBalance -= finalAmount;
-
-console.log("Remaining wallet balance:", walletBalance);
+// console.log("After discount:", subtotal);
 
 
-// ### Part 3 — Comparisons
+// subtotal += shippingCharge;
+
+// console.log("After shipping:", subtotal);
 
 
-console.log("Subtotal > ₹10,000:", subtotal > 10000)
-console.log("Quantity >= 3:", quantity >= 3)
-console.log("Available stock >= quantity:", availableStock >= quantity)
-console.log("Discount > ₹1,000:", discount > 1000)
-console.log("Wallet balance >= final amount:",walletBalance >= finalAmount)
-console.log("Final amount < ₹15,000:", finalAmount < 15000)
+// walletBalance -= finalAmount;
 
-// ### Part 4 — Logical Operators
-
-var stockAvailable = availableStock >= quantity;
-var balanceAvailable = walletBalance >= finalAmount;
-var discountAvailable = discount > 0;
-
-console.log("Stock Available:", stockAvailable);
-console.log("Balance Available:", balanceAvailable);
-console.log("Discount Available:", discountAvailable);
+// console.log("Remaining wallet balance:", walletBalance);
 
 
-var canPurchase = stockAvailable && balanceAvailable;
-
-console.log("Can Purchase:", canPurchase);
-
-var specialCustomer = isMember && hasCoupon;
-
-console.log("Special Customer:", specialCustomer);
+// // ### Part 3 — Comparisons
 
 
-var notMember = !isMember;
+// console.log("Subtotal > ₹10,000:", subtotal > 10000)
+// console.log("Quantity >= 3:", quantity >= 3)
+// console.log("Available stock >= quantity:", availableStock >= quantity)
+// console.log("Discount > ₹1,000:", discount > 1000)
+// console.log("Wallet balance >= final amount:",walletBalance >= finalAmount)
+// console.log("Final amount < ₹15,000:", finalAmount < 15000)
 
-console.log("Not Member:", notMember);
+// // ### Part 4 — Logical Operators
 
-// ### Part 5 — Ternary Operator
+// var stockAvailable = availableStock >= quantity;
+// var balanceAvailable = walletBalance >= finalAmount;
+// var discountAvailable = discount > 0;
 
-var purchaseStatus = stockAvailable && balanceAvailable ? "Purchase Successful" : "Purchase Failed";
-
-console.log(purchaseStatus);
-
-// ### Part 6 — Increment / Decrement
-var orderCount = 10;
-var stock = 50;
-var quantity = 3;
-
-orderCount++;
-
-stock -= quantity;
-
-console.log("Order Count:", orderCount);
-console.log("Stock:", stock);
+// console.log("Stock Available:", stockAvailable);
+// console.log("Balance Available:", balanceAvailable);
+// console.log("Discount Available:", discountAvailable);
 
 
+// var canPurchase = stockAvailable && balanceAvailable;
 
-// ### Part 7 — Operator Precedence
+// console.log("Can Purchase:", canPurchase);
 
-var result1 = 1000 + 500 * 2 - 200 / 2;
-console.log(result1);
+// var specialCustomer = isMember && hasCoupon;
 
-var result2 = (1000 + 500) * 2 - 200 / 2;
-console.log(result2);
+// console.log("Special Customer:", specialCustomer);
+
+
+// var notMember = !isMember;
+
+// console.log("Not Member:", notMember);
+
+// // ### Part 5 — Ternary Operator
+
+// var purchaseStatus = stockAvailable && balanceAvailable ? "Purchase Successful" : "Purchase Failed";
+
+// console.log(purchaseStatus);
+
+// // ### Part 6 — Increment / Decrement
+// var orderCount = 10;
+// var stock = 50;
+// var quantity = 3;
+
+// orderCount++;
+
+// stock -= quantity;
+
+// console.log("Order Count:", orderCount);
+// console.log("Stock:", stock);
 
 
 
-// ### Part 8 — Final Output
+// // ### Part 7 — Operator Precedence
 
-console.log("====================================")
-console.log("         ONLINE ORDER SYSTEM   ")
-console.log("====================================")
-console.log("Product Price:", productPrice)
-console.log("Quantity:",quantity)
+// var result1 = 1000 + 500 * 2 - 200 / 2;
+// console.log(result1);
 
-console.log("Subtotal:", subtotal)
-console.log("Discount:",discount)
-console.log("Shipping:", shipping)
-console.log("Final Amount:",finalAmount)
-console.log("Wallet Balance:",walletBalance)
+// var result2 = (1000 + 500) * 2 - 200 / 2;
+// console.log(result2);
 
-console.log("Remaining Balance:",remainingBalance)
 
-console.log("Stock Available:",stockAvailable)
-console.log("Member:",isMember)
 
-console.log("Coupon Available:", hasCoupon)
-console.log("Can Purchase:", canPurchase)
+// // ### Part 8 — Final Output
 
-console.log("Special Customer:", specialCustomer)
+// console.log("====================================")
+// console.log("         ONLINE ORDER SYSTEM   ")
+// console.log("====================================")
+// console.log("Product Price:", productPrice)
+// console.log("Quantity:",quantity)
 
-console.log("Purchase Status:",purchaseStatus)
-console.log("Remaining balance:", remainingBalance)
-console.log("====================================")
+// console.log("Subtotal:", subtotal)
+// console.log("Discount:",discount)
+// console.log("Shipping:", shipping)
+// console.log("Final Amount:",finalAmount)
+// console.log("Wallet Balance:",walletBalance)
+
+// console.log("Remaining Balance:",remainingBalance)
+
+// console.log("Stock Available:",stockAvailable)
+// console.log("Member:",isMember)
+
+// console.log("Coupon Available:", hasCoupon)
+// console.log("Can Purchase:", canPurchase)
+
+// console.log("Special Customer:", specialCustomer)
+
+// console.log("Purchase Status:",purchaseStatus)
+// console.log("Remaining balance:", remainingBalance)
+// console.log("====================================")
+
+
+
+
+
+
+
+
+
+
+
+
+// conditional statements
+
+// 
+
+// var age = 19;
+// if (age >= 18){
+//     console.log("Eligible to Vote")
+// }else{
+//     console.log("Not Eligible to Vote")
+// }
+
+// // Exercise 2 — Positive, Negative or Zero
+
+// var number = -25;
+// if(number >=0){
+//     console.log("Positive Number")
+// }
+// else if(number < 0){
+// console.log("Negative Number")
+// }
+// else {
+//     console.log("zero")
+// }
+
+// Exercise 3 — Even or Odd
+
+
+// var number = 47;
+
+// if(number %2 == 0){
+// console.log("even number")
+// }
+// else{
+// console.log("odd number")
+// }
+
+// Exercise 4 — Student Grade Calculator
+
+// var marks = 57;
+// if (marks>=90 && marks < 100){
+//     console.log("Grade A++")
+// }else if (marks>=80 && marks < 90){
+//     console.log("Grade A")
+// }else if (marks>=70 && marks < 80){
+//     console.log("Grade B")
+// }else if (marks>=60 && marks < 70){
+//     console.log("Grade C")
+// }else if (marks>=50 && marks <60){
+//     console.log("Grade D")
+// }else{
+//     console.log("Sorry You are fail")
+// }
+
+
+// Exercise 5 — Largest of Three Numbers
+
+
+
+
+
+// var a = 45;
+// var b = 89;
+// var c = 97;
+
+// if (a > b && a > c) {
+//     console.log(a + " is the largest number");
+// } else if (b > a && b > c) {
+//     console.log(b + " is the largest number");
+// } else {
+//     console.log(c + " is the largest number");
+// }
+
+// Challenge
+
+// var a = 60;
+// var b = 60;
+// var c = 60;
+
+// if (a > b && a > c) {
+//     console.log(a + " is the largest number");
+// } else if (b > a && b > c) {
+//     console.log(b + " is the largest number");
+
+// }else if (a==b&& b==c){
+//     console.log("Both are equal")
+// }
+
+// else  {
+//     console.log(c + " is the largest number");
+// }
+
+
+// Exercise 6 — Login System
+
+
+// var correctUsername = "adminl";
+// var correctPassword = "123459";
+// var enteredUsername = "admin";
+// var enteredPassword = "123459";
+
+// if (correctUsername===enteredUsername&& correctPassword===enteredPassword){
+//     console.log("Login Successful")}
+
+// else if (correctUsername!==enteredUsername && correctPassword!==enteredPassword){
+// console.log("Invalid Username and Password")
+// }
+
+//  else if (correctUsername !== enteredUsername) {
+//     console.log("Invalid Username");
+// }
+// else if (correctPassword !== enteredPassword) {
+//     console.log("Invalid Password");
+// }
+
+
+// Exercise 7 — Employee Bonus System
+
+// var salary = 50000;
+// var experience = 6;
+// var performanceScore = 95;
+
+// if (experience >= 5 && performanceScore >= 80){
+//     if(performanceScore >= 90 ){
+//       console.log("→ Excellent Bonus")
+//     }
+//     else if(performanceScore >= 80){
+//         console.log("→ Standard Bonus")
+//     }
+// }
+// else{
+//     console.log("Not Eligible for Bonus")
+// }
+
+// Exercise 8 — Driving Eligibility System
+// var age = 18;
+// var hasLicense = false;
+// var isSuspended = false;
+
+// if (age >= 18 && hasLicense && !isSuspended) {
+//     console.log("Allowed to Drive");
+// }
+// else if (age < 18) {
+//     console.log("Too Young to Drive");
+// }
+// else if (!hasLicense) {
+//     console.log("Driving License Required");
+// }
+// else if (isSuspended) {
+//     console.log("License Suspended");
+// }
+
+
+
+// Exercise 9 — E-Commerce Discount 
+// var purchaseAmount = 12000;
+// var isMember = true;
+// var hasCoupon = true;
+
+// if (purchaseAmount >= 15000) {
+//     mainDiscount = purchaseAmount * 20 / 100;
+// } 
+// else if (purchaseAmount >= 10000 && purchaseAmount < 15000) {
+//     mainDiscount = purchaseAmount * 15 / 100;
+// } 
+// else if (purchaseAmount >= 5000 && purchaseAmount < 10000) {
+//     mainDiscount = purchaseAmount * 10 / 100;
+// } 
+// else {
+//     mainDiscount = 0;
+// }
+
+// if (isMember === true) {
+//     memberDiscount = purchaseAmount * 5 / 100;
+// }
+
+// if (hasCoupon === true) {
+//     if (purchaseAmount >= 5000) {
+//         couponDiscount = 500;
+//     }
+// }
+
+// var totalDiscount = mainDiscount + memberDiscount + couponDiscount;
+// var finalAmount = purchaseAmount - totalDiscount;
+
+// console.log("Purchase Amount:", purchaseAmount);
+// console.log("Main Discount:", mainDiscount);
+// console.log("Member Discount:", memberDiscount);
+// console.log("Coupon Discount:", couponDiscount);
+// console.log("Total Discount:", totalDiscount);
+// console.log("Final Amount:", finalAmount);
+
+// Exercise 10 — Student Scholarship System
+
+var marks = 88;
+var attendance = 92;
+var familyIncome = 400000;
+var hasDisciplinaryAction = false;
+
+if
