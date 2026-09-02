@@ -100,7 +100,7 @@
 
 // 1. Are these four variables the same ?
 //     Ans No these 4 variables are different because javaScript are Case Sensitivite.
-  
+
 // 2. What will happen if you write:
 // console.log(name);
 // console.log(Name);
@@ -162,7 +162,7 @@
 
 
 // Lecture = 2 Datatype & typeof
- 
+
 
 
 // Exercise 1 — Identify Data Types
@@ -209,7 +209,7 @@
 
 // Exercise 2 — Student Information
 
-  
+
 
 // var name = "Bharat";
 // var age = 21;
@@ -250,7 +250,7 @@
 // var studentName = 100;
 // var phoneNumber = 9876543210;
 // var city = true;
- 
+
 // 1 Identify which variables have incorrect data types.
 // Answer
 
@@ -325,7 +325,7 @@
 // var inStock = true;
 // var discount = null;
 // var productCode;
-  
+
 // Print every variable
 
 // console.log("Product name =", productName)
@@ -637,7 +637,7 @@
 //     console.log("Result",result)
 
 
-    // # Exercise 4 — Advanced Comparison Challenge
+// # Exercise 4 — Advanced Comparison Challenge
 
 
 // var a = 10;
@@ -1017,7 +1017,7 @@
 
 // var subtotal = productPrice*quantity;
 // console.log("subtotal: ", subtotal);
-  
+
 // var discountAmount = discount*quantity
 // console.log("discountAmount: ", discountAmount);
 
@@ -1344,9 +1344,95 @@
 
 // Exercise 10 — Student Scholarship System
 
-var marks = 88;
-var attendance = 92;
-var familyIncome = 400000;
-var hasDisciplinaryAction = false;
 
-if
+// var marks = 88;
+// var attendance = 90;
+// var familyIncome = 400000;
+// var hasDisciplinaryAction = true;
+
+// // Step 1 — Validate
+
+// if (marks < 0 || marks > 100 || attendance < 0 || attendance > 100) {
+//     console.log("Invalid Student Data");
+// }
+// else{
+// // Step 2 — Basic Scholarship Eligibility
+// if  ((marks >= 75 || attendance >= 80) && hasDisciplinaryAction === true) {
+   
+// console.log("=============================")
+// console.log("     SCHOLARSHIP RESULT ")
+// console.log("=============================")
+// console.log("Marks:", marks);
+// console.log("Attandance: ", attendance )
+// console.log ("Status : eligible")
+
+// //  Step 3 — Scholarship Category
+
+// if (marks >= 90) {
+//     if (attendance >= 90) {
+//         console.log("Scholarship : 100%")
+//     }
+// }
+// else if (marks >= 85) {
+//     if (attendance >= 85) {
+//         console.log("Scholarship : 85%")
+//     }
+// }
+// else if (marks >= 75) {
+//     if (attendance >= 80) {
+//         console.log("Scholarship : 75%")
+//     }
+// }
+// // Step 4 — Financial Assistance
+
+
+// if (familyIncome <= 300000){
+//     console.log("Financial Assistance: yes")
+// }
+// else{
+//     console.log ("Financial Assistance: No")
+// }
+// console.log("=============================")
+
+
+// }
+// else {
+// console.log (" your are not eligible")
+// }
+// }
+
+
+
+// Bonus — ATM Withdrawal Challenge
+
+
+var accountBalance = 250000;
+var withdrawalAmount = 8000;
+var pin = 1234;
+var enteredPin = 1234;
+var accountActive = true;
+
+if (accountActive===true && enteredPin===pin && withdrawalAmount<=accountBalance && withdrawalAmount > 0 ){
+    if (enteredPin===pin ){
+        if (withdrawalAmount > 0){
+           if (withdrawalAmount<=accountBalance) {
+            console.log ("Withdrawal Successfull")
+           }
+        }
+    }
+}
+else if(accountActive !== true){
+    console.log ("Account is inactive")
+}
+else if (enteredPin !== pin){
+    console.log("Incorrect PIN")
+}
+else if (withdrawalAmount<=0){
+    console.log("Invalid withdrawal amount")
+}
+else if (withdrawalAmount> accountBalance){
+    console.log ("Insufficient balance")
+}
+
+
+
