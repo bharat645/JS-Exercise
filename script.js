@@ -1164,8 +1164,8 @@
 
 // // Exercise 2 — Positive, Negative or Zero
 
-// var number = -25;
-// if(number >=0){
+// var number = -67;
+// if(number >0){
 //     console.log("Positive Number")
 // }
 // else if(number < 0){
@@ -1178,7 +1178,7 @@
 // Exercise 3 — Even or Odd
 
 
-// var number = 47;
+// var number = 46;
 
 // if(number %2 == 0){
 // console.log("even number")
@@ -1206,8 +1206,6 @@
 
 
 // Exercise 5 — Largest of Three Numbers
-
-
 
 
 
@@ -1246,7 +1244,7 @@
 // Exercise 6 — Login System
 
 
-// var correctUsername = "adminl";
+// var correctUsername = "admin";
 // var correctPassword = "123459";
 // var enteredUsername = "admin";
 // var enteredPassword = "123459";
@@ -1270,7 +1268,7 @@
 
 // var salary = 50000;
 // var experience = 6;
-// var performanceScore = 95;
+// var performanceScore = 91;
 
 // if (experience >= 5 && performanceScore >= 80){
 //     if(performanceScore >= 90 ){
@@ -1358,7 +1356,7 @@
 // else{
 // // Step 2 — Basic Scholarship Eligibility
 // if  ((marks >= 75 || attendance >= 80) && hasDisciplinaryAction === true) {
-   
+
 // console.log("=============================")
 // console.log("     SCHOLARSHIP RESULT ")
 // console.log("=============================")
@@ -1406,33 +1404,407 @@
 // Bonus — ATM Withdrawal Challenge
 
 
-var accountBalance = 250000;
-var withdrawalAmount = 8000;
-var pin = 1234;
-var enteredPin = 1234;
-var accountActive = true;
+// var accountBalance = 250000;
+// var withdrawalAmount = 8000;
+// var pin = 1234;
+// var enteredPin = 1234;
+// var accountActive = true;
 
-if (accountActive===true && enteredPin===pin && withdrawalAmount<=accountBalance && withdrawalAmount > 0 ){
-    if (enteredPin===pin ){
-        if (withdrawalAmount > 0){
-           if (withdrawalAmount<=accountBalance) {
-            console.log ("Withdrawal Successfull")
-           }
-        }
-    }
-}
-else if(accountActive !== true){
-    console.log ("Account is inactive")
-}
-else if (enteredPin !== pin){
-    console.log("Incorrect PIN")
-}
-else if (withdrawalAmount<=0){
-    console.log("Invalid withdrawal amount")
-}
-else if (withdrawalAmount> accountBalance){
-    console.log ("Insufficient balance")
-}
+// if (accountActive===true && enteredPin===pin && withdrawalAmount<=accountBalance && withdrawalAmount > 0 ){
+//     if (enteredPin===pin ){
+//         if (withdrawalAmount > 0){
+//            if (withdrawalAmount<=accountBalance) {
+//             console.log ("Withdrawal Successfull")
+//            }
+//         }
+//     }
+// }
+// else if(accountActive !== true){
+//     console.log ("Account is inactive")
+// }
+// else if (enteredPin !== pin){
+//     console.log("Incorrect PIN")
+// }
+// else if (withdrawalAmount<=0){
+//     console.log("Invalid withdrawal amount")
+// }
+// else if (withdrawalAmount> accountBalance){
+//     console.log ("Insufficient balance")
+// }
 
 
 
+
+
+
+//  switich and loop exercise
+
+
+
+
+// Exercise 1 — Day of the Week
+
+// var day = 6;
+
+// switch(day){
+//     case 1: 
+//     console.log("Sunday")
+//     break;
+//     case 2: 
+//     console.log("Monday")
+//     break;
+//     case 3: 
+//     console.log("Tuesday")
+//     break;
+//     case 4: 
+//     console.log("Wednesday")
+//     break;
+//     case 5: 
+//     console.log("Friday")
+//     break;
+//     case 6: 
+//     console.log("Saturday")
+//     break;
+//     default: 
+//     console.log("Invalid day")
+//     break;
+// }
+
+// Exercise 2 — Month of the Year
+
+
+
+// var month = 23;
+
+// switch(month){
+//     case 1: 
+//     console.log("January")
+//     break;
+//     case 2: 
+//     console.log("February")
+//     break;
+//     case 3: 
+//     console.log("March")
+//     break;
+//     case 4: 
+//     console.log("April")
+//     break;
+//     case 5: 
+//     console.log("May")
+//     break;
+//     case 6: 
+//     console.log("June")
+//     break;
+//     case 7: 
+//     console.log("July")
+//     break;
+//     case 8: 
+//     console.log("August")
+//     break;
+//     case 9: 
+//     console.log("September")
+//     break;
+//     case 10: 
+//     console.log("October")
+//     break;
+//     case 11: 
+//     console.log("November")
+//     break;
+//     case 12: 
+//     console.log("December")
+//     break;
+//     default: 
+//     console.log("Invalid month")
+//     break;
+// }
+
+
+// Exercise 3 — Simple Calculator
+
+
+// var num1 = 50;
+// var num2 = 10;
+// var operator = "*";
+// var result;
+
+// switch (operator) {
+//     case "+":
+//         result = (num1 + num2);
+//         break;
+//     case "-":
+//         result = (num1 - num2);
+//         break;
+//     case "*":
+//         result = (num1 * num2);
+//         break;
+//     case "/":
+//         result = (num1 / num2);
+//         break;
+//     case "%":
+//         result = (num1 % num2);
+//         break;
+//     default:
+//         console.log("Invalid Operator")
+
+// }
+
+// console.log(" result : ", result)
+
+
+// Exercise 4 — Traffic Light System
+
+
+// var light = "green";
+
+// switch (light) {
+//     case "yellow":
+//         console.log("get ready");
+//         break;
+//     case "red":
+//         console.log("Stop");
+//         break;
+
+
+//     case "green":
+//         console.log("go");
+//         break;
+//     default:
+//         console.log("Invalid Traffic Light")
+
+
+// }
+
+
+// Exercise 5 — User Role & Permissions
+
+
+// var role = "manager";
+
+// switch (role) {
+//     case "admin":
+//         console.log("→ Full System Access");
+//         break;
+//     case "manager":
+//         console.log("→ Manage Team and Reports");
+//         break;
+
+
+//     case "employee":
+//         console.log("→ Employee Dashboard Access");
+//         break;
+
+//     case "intern":
+//         console.log("→ Limited Access");
+//         break;
+//     case "guest":
+//         console.log("→ View Only Access");
+//         break;
+//     default:
+//         console.log("Invalid user role")
+
+
+// }
+
+// Exercise 6 — Grade Message
+
+// var grade = "B";
+
+// switch (role) {
+//     case "A":
+//         console.log("→ Excellent");
+//         break;
+//     case "B":
+//         console.log("→ Very good");
+//         break;
+
+
+//     case "C":
+//         console.log("→  Good");
+//         break;
+
+//     case "D":
+//         console.log("→ Needs Improvement");
+//         break;
+//     case "F":
+//         console.log("→ Fail ");
+//         break;
+//     default:
+//         console.log("Invalid Grade")
+
+
+// }
+
+// Exercise 7 — Food Ordering System
+
+
+// var food = "pizza";
+
+
+// switch (food) {
+//     case "pizza":
+//         console.log("→ ₹299");
+//         break;
+//     case "burger":
+//         console.log("→ ₹149");
+//         break;
+
+
+//     case "sandwich":
+//         console.log("→  ₹129");
+//         break;
+
+//     case "pasta":
+//         console.log("→ ₹249");
+//         break;
+//     case "coffee":
+//         console.log("→₹99 ");
+//         break;
+//         case "tea":
+//         console.log("→₹49 ");
+//         break;
+//     default:
+//         console.log("Item is not Avaliable")
+
+
+// }
+
+
+// Exercise 8 — Multiple Cases: Weekday vs Weekend
+
+// var day = "Monday";
+
+// switch(day){
+//     case "Monday": 
+//     case "Tuesday": 
+//     case "Wednesday": 
+//     case "Friday": 
+//     console.log("It is a Weekday")
+//     break;
+//     case "Sunday" :
+//     case   "Saturday": 
+//     console.log("It is a Weekend")
+//     break;
+//     default: 
+//     console.log("Invalid day")
+//     break;
+// }
+
+// Exercise 9 — ATM Menu System
+
+// var option = 1;
+// var balance = 25000;
+
+// switch(option){
+//   case 1:
+//     console.log ("Your Balance is", balance)   
+//     break;
+//     case 2:
+//     console.log ("Deposit Selected")   
+//     break;
+//     case 3:
+//     console.log ("Withdrawal Selected")   
+//     break;
+//     case 4:
+//     console.log ("Mini Statement Selected" )   
+//     break;
+//     case 5:
+//     console.log ("Change PIN Selected")   
+//     break;
+//      case 6:
+//     console.log ("Thank You for Using Our ATM")   
+//     break; 
+//      default:
+//         console.log("Invalid ATM Option")
+// }
+ 
+
+// Exercise 10 — E-Commerce Order Status
+
+// var orderStatus = "confirmed";
+// var paymentMethod = "UPI";
+
+
+// console.log("==============================")
+// console.log("           ORDER DETAILS")
+// console.log("==============================")
+// console.log("Order Status:", orderStatus)
+
+
+
+//   switch(orderStatus){
+//   case "pending" :
+//     console.log ("→ Your order has been received.")   
+//     break;
+//     case "confirmed":
+//     console.log ("→ Your order has been confirmed")   
+//     break;
+//     case "processing":
+//     console.log ("→ Your order is being prepared.")   
+//     break;
+//     case "shipped":
+//     console.log ("→ Your order has been shipped." )   
+//     break;
+//     case "out-fordelivery":
+//     console.log ("→ Your order is out for delivery.")   
+//     break;
+//      case "delivered":
+//     console.log ("→ Your order has been delivered.")   
+//     break; 
+//      case "cancelled":
+//     console.log ("→ Your order has been cancelled.")   
+//     break; 
+//      case "returned":
+//     console.log ("→ Your return request is being processed.")   
+//     break; 
+//      default:
+//         console.log("Invalid Order Status")
+// }
+
+
+// console.log("Payment method:", paymentMethod);
+
+// switch(paymentMethod) {
+//     case "Cash":
+//         console.log("→ Cash on Delivery");
+//         break;
+
+//     case "UPI":
+//         console.log("→ UPI Payment");
+//         break;
+
+//     case "Netbanking":
+//         console.log("→ Net Banking");
+//         break;
+
+//     case "card":
+//         console.log("→ Credit/Debit Card");
+//         break;
+
+//     case "wallet":
+//         console.log("→ Digital Wallet");
+//         break;
+
+//     default:
+//         console.log("Invalid Payment Method");
+// }
+
+
+// console.log("==============================")
+
+
+var option = "1";
+
+switch (option) {
+    case 1:
+        console.log("Option One");
+        break;
+
+    case 2:
+        console.log("Option Two");
+        break;
+
+    default:
+        console.log("Invalid Option");
+}
+
+// output is  Invalid option because Case matching uses strict comparison behavior, so number 1 does not match string "1".
