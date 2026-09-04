@@ -1716,7 +1716,7 @@
 //      default:
 //         console.log("Invalid ATM Option")
 // }
- 
+
 
 // Exercise 10 — E-Commerce Order Status
 
@@ -1792,19 +1792,261 @@
 // console.log("==============================")
 
 
-var option = "1";
+// var option = "1";
 
-switch (option) {
-    case 1:
-        console.log("Option One");
-        break;
+// switch (option) {
+//     case 1:
+//         console.log("Option One");
+//         break;
 
-    case 2:
-        console.log("Option Two");
-        break;
+//     case 2:
+//         console.log("Option Two");
+//         break;
 
-    default:
-        console.log("Invalid Option");
-}
+//     default:
+//         console.log("Invalid Option");
+// }
 
 // output is  Invalid option because Case matching uses strict comparison behavior, so number 1 does not match string "1".
+
+
+
+
+
+// loop statements
+
+// Exercise 1 — Number Range
+
+// Print numbers from 1 to 100.
+
+// for(i =1 ;i<=100;i++){
+//     console.log (i)
+
+// }
+
+
+
+// Print numbers from 100 to 1.
+
+// for (let i = 100; i >= 1; i--) {
+//   console.log(i);
+// }
+
+// Print numbers from 50 to 75.
+
+// for(i =50 ;i<=75;i++){
+//     console.log (i)
+
+// }
+
+// Print numbers from 200 to 150 in reverse.
+
+// for (let i = 200; i >= 150; i--) {
+//   console.log(i);
+// }
+
+
+
+// Exercise 2 — Even & Odd Numbers
+// let even =0;
+// let odd =0
+
+
+// for (let i = 1; i <= 100; i++) {
+//    i % 2 === 0 ? even++ : odd++;
+
+//     i % 2 === 0 ? console.log(i + " even number") : null;
+
+//     i % 3 === 0 ? console.log(i + " odd number") : null; 
+
+
+// }
+// console.log(" even number", even)
+// console.log(" odd number",odd)
+
+// Exercise 3 — Multiplication Table
+
+// var number = 17;
+// for (let i = 1; i <= 20; i++) {
+//     console .log (number +"*"+ i + "="+ (number*i))
+// }
+
+
+// Exercise 4 — Sum & Product of Numbers
+// let sum =0
+// for( let i =1 ; i<=100;i++){
+//      sum = sum + i;
+// }
+
+// console.log("sum =", sum)
+
+// let product =0
+// for( let i =1 ; i<=10;i++){
+//      product = product + i;
+// }
+
+// console.log("product =", product)
+
+
+// Exercise 5 — Divisibility Analyzer
+
+// let divisibleBy3 = 0;
+// let divisibleBy5 = 0;
+// let divisibleByBoth = 0;
+
+// for (let i = 1; i <= 100; i++) {
+
+//     i % 3 === 0 && i % 5 === 0
+//         ? divisibleByBoth++
+//         : i % 3 === 0
+//         ? divisibleBy3++
+//         : i % 5 === 0
+//         ? divisibleBy5++
+//         : null;
+// }
+
+// console.log("Divisible by 3:", divisibleBy3);
+// console.log("Divisible by 5:", divisibleBy5);
+// console.log("Divisible by Both:", divisibleByBoth);
+
+
+// Exercise 6 — Factorial
+
+// var n = 7;
+// var  Factorial =1
+
+// for (i = 1; i<=n ; i++){
+//     Factorial= Factorial* i
+// }
+// console.log ("factorial of 7 :", Factorial)
+
+
+// Exercise 7 — Number Analysis
+
+// let divisibleBy3 = 0;
+// let divisibleBy5 = 0;
+// let divisibleBy7 = 0;
+// let divisibleByBoth = 0;
+// let even = 0;
+// let odd = 0;
+
+
+// console.log("========================")
+// console.log("     Number Anylysis")
+// console.log("========================")
+
+
+// for (let i = 1; i <= 100; i++) {
+
+//    i % 2 === 0 ? even++ : odd++;
+
+//     i % 3 === 0 && i % 5 === 0
+//         ? divisibleByBoth++
+//         : i % 3 === 0
+//             ? divisibleBy3++
+//             : i % 5 === 0
+//                 ? divisibleBy5++
+//                 : i % 7 === 0
+//                     ? divisibleBy7++
+//                     : null;
+// }
+// console.log(" even number", even)
+// console.log(" odd number",odd)
+// console.log("Divisible by 3:", divisibleBy3);
+// console.log("Divisible by 5:", divisibleBy5);
+// console.log("Divisible by 7:", divisibleBy7);
+// console.log("Divisible by Both:", divisibleByBoth);
+
+
+// Exercise 8 — Prime Number Checker
+
+// var number = 36;
+// var isPrime = true;
+
+// if (number <= 1) {
+//     isPrime = false;
+// }
+
+// for (var i = 2; i < number; i++) {
+
+//     if (number % i === 0) {
+//         isPrime = false;
+//         break;
+//     }
+// }
+
+// if (isPrime) {
+//     console.log(number + " is a Prime Number");
+// } else {
+//     console.log(number + " is Not a Prime Number");
+// }
+
+
+// Exercise 10 — Number Intelligence System
+
+let divisibleBy3 = 0;
+let divisibleBy5 = 0;
+let divisibleBy7 = 0;
+let divisibleByBoth = 0;
+let even = 0;
+let odd = 0;
+let sum = 0;
+let evensum = 0;
+let oddsum = 0;
+let sumofmulti = 0
+
+
+console.log("==============================")
+console.log("        Number Report 1 -500")
+console.log("==============================")
+
+for (let i = 1; i <= 500; i++) {
+
+
+    if (i % 2 === 0) {
+        even++;
+        evensum += i;
+    } else {
+        odd++;
+        oddsum += i;
+    }
+
+   if (i % 3 === 0 && i % 5 === 0) {
+    divisibleByBoth++;
+}
+
+    if (i % 3 === 0) {
+    divisibleBy3++;
+}
+if (i % 5 === 0) {
+    divisibleBy5++;
+    sumofmulti += i;
+} else if (i % 7 === 0) {
+
+        divisibleBy7++;
+
+    }
+
+    
+    sum += i;
+}
+
+  
+console.log(" even number", even)
+console.log(" odd number",odd)
+console.log("Divisible by 3:", divisibleBy3);
+console.log("Divisible by 5:", divisibleBy5);
+console.log("Divisible by 7:", divisibleBy7);
+console.log("Divisible by 3 & 5:", divisibleByBoth);
+console.log("Sum of All Numbers:", sum);
+console.log(" Sum of Even Numbers:", evensum)
+console.log(" Sum of Odd Numbers",oddsum)
+console.log("Sum of Multiples of 5:",sumofmulti)
+
+
+
+
+
+
+
+
