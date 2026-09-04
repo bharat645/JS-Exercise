@@ -1982,6 +1982,74 @@
 // }
 
 
+// Exercise 9 — Pattern Challenge
+
+// Pattern A
+
+// for (let i = 1 ; i <=5 ; i++ ){
+//     let row = " ";
+// for (let j = 1 ; j <=i ; j++ ){
+//     row +="*";
+
+// }
+// console.log (row)
+// }
+
+
+// Pattern B
+// for (let i = 5 ; i >=1 ; i-- ){
+//     let row = " ";
+// for (let j = 1 ; j <=i ; j++ ){
+//     row +="*";
+
+// }
+// console.log (row)
+// }
+
+
+//  Pattern C
+
+// for (let i = 1; i <= 5; i++) {
+
+//     let row = "";
+
+//     for (let j = 1; j <= i; j++) {
+//         row += i;
+//     }
+
+//     console.log(row);
+// }
+
+// Pattern D
+
+// for (let i = 1 ; i <=5 ; i++ ){
+//     let row = " ";
+// for (let j = 1 ; j <=i ; j++ ){
+//     row +=j;
+
+// }
+// console.log (row)
+// }
+
+
+// Pattern E
+
+
+// for (let i = 1; i <= 10; i++) {
+
+//     let row = "";
+
+//     for (let j = 1; j <= 10 - i; j++) {
+//         row += " ";
+//     }
+//     for (let j = 1; j <= (2 * i - 1); j++) {
+//         row += "*";
+//     }
+
+//     console.log(row);
+// }
+
+
 // Exercise 10 — Number Intelligence System
 
 // let divisibleBy3 = 0;
@@ -2051,7 +2119,18 @@
 
 
 // Create a multiplication table of 5
-var number = 5;
-for (let i = 1; i <= 10; i++) {
-    console .log (number +"*"+ i + "="+ (number*i))
-}
+// var number = 5;
+// for (let i = 1; i <= 10; i++) {
+//     console .log (number +"*"+ i + "="+ (number*i))
+// }
+
+
+// for (let i = 1; i <= 5; i++) {
+//     let row = "";
+
+//     for (let j = 1; j <= 5; j++) {
+//         row += "*";
+//     }
+
+//     console.log(row);
+// }
