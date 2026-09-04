@@ -1984,64 +1984,64 @@
 
 // Exercise 10 — Number Intelligence System
 
-let divisibleBy3 = 0;
-let divisibleBy5 = 0;
-let divisibleBy7 = 0;
-let divisibleByBoth = 0;
-let even = 0;
-let odd = 0;
-let sum = 0;
-let evensum = 0;
-let oddsum = 0;
-let sumofmulti = 0
+// let divisibleBy3 = 0;
+// let divisibleBy5 = 0;
+// let divisibleBy7 = 0;
+// let divisibleByBoth = 0;
+// let even = 0;
+// let odd = 0;
+// let sum = 0;
+// let evensum = 0;
+// let oddsum = 0;
+// let sumofmulti = 0
 
 
-console.log("==============================")
-console.log("        Number Report 1 -500")
-console.log("==============================")
+// console.log("==============================")
+// console.log("        Number Report 1 -500")
+// console.log("==============================")
 
-for (let i = 1; i <= 500; i++) {
+// for (let i = 1; i <= 500; i++) {
 
 
-    if (i % 2 === 0) {
-        even++;
-        evensum += i;
-    } else {
-        odd++;
-        oddsum += i;
-    }
+//     if (i % 2 === 0) {
+//         even++;
+//         evensum += i;
+//     } else {
+//         odd++;
+//         oddsum += i;
+//     }
 
-   if (i % 3 === 0 && i % 5 === 0) {
-    divisibleByBoth++;
-}
+//    if (i % 3 === 0 && i % 5 === 0) {
+//     divisibleByBoth++;
+// }
 
-    if (i % 3 === 0) {
-    divisibleBy3++;
-}
-if (i % 5 === 0) {
-    divisibleBy5++;
-    sumofmulti += i;
-} else if (i % 7 === 0) {
+//     if (i % 3 === 0) {
+//     divisibleBy3++;
+// }
+// if (i % 5 === 0) {
+//     divisibleBy5++;
+//     sumofmulti += i;
+// } else if (i % 7 === 0) {
 
-        divisibleBy7++;
+//         divisibleBy7++;
 
-    }
+//     }
 
     
-    sum += i;
-}
+//     sum += i;
+// }
 
   
-console.log(" even number", even)
-console.log(" odd number",odd)
-console.log("Divisible by 3:", divisibleBy3);
-console.log("Divisible by 5:", divisibleBy5);
-console.log("Divisible by 7:", divisibleBy7);
-console.log("Divisible by 3 & 5:", divisibleByBoth);
-console.log("Sum of All Numbers:", sum);
-console.log(" Sum of Even Numbers:", evensum)
-console.log(" Sum of Odd Numbers",oddsum)
-console.log("Sum of Multiples of 5:",sumofmulti)
+// console.log(" even number", even)
+// console.log(" odd number",odd)
+// console.log("Divisible by 3:", divisibleBy3);
+// console.log("Divisible by 5:", divisibleBy5);
+// console.log("Divisible by 7:", divisibleBy7);
+// console.log("Divisible by 3 & 5:", divisibleByBoth);
+// console.log("Sum of All Numbers:", sum);
+// console.log(" Sum of Even Numbers:", evensum)
+// console.log(" Sum of Odd Numbers",oddsum)
+// console.log("Sum of Multiples of 5:",sumofmulti)
 
 
 
@@ -2050,3 +2050,8 @@ console.log("Sum of Multiples of 5:",sumofmulti)
 
 
 
+// Create a multiplication table of 5
+var number = 5;
+for (let i = 1; i <= 10; i++) {
+    console .log (number +"*"+ i + "="+ (number*i))
+}
