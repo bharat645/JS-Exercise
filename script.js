@@ -1960,7 +1960,7 @@
 
 // Exercise 8 — Prime Number Checker
 
-// var number = 36;
+// var number = 7;
 // var isPrime = true;
 
 // if (number <= 1) {
@@ -2007,7 +2007,7 @@
 // }
 
 
-//  Pattern C
+// //  Pattern C
 
 // for (let i = 1; i <= 5; i++) {
 
@@ -2020,7 +2020,7 @@
 //     console.log(row);
 // }
 
-// Pattern D
+// // Pattern D
 
 // for (let i = 1 ; i <=5 ; i++ ){
 //     let row = " ";
@@ -2032,7 +2032,7 @@
 // }
 
 
-// Pattern E
+// // Pattern E
 
 
 // for (let i = 1; i <= 10; i++) {
@@ -2095,11 +2095,11 @@
 
 //     }
 
-    
+
 //     sum += i;
 // }
 
-  
+
 // console.log(" even number", even)
 // console.log(" odd number",odd)
 // console.log("Divisible by 3:", divisibleBy3);
@@ -2123,5 +2123,231 @@
 // for (let i = 1; i <= 10; i++) {
 //     console .log (number +"*"+ i + "="+ (number*i))
 // }
+
+
+
+
+
+// function exercise
+
+// function greet(){
+//     console.log ("Welcome to JavaScript Functions")
+// };
+
+// greet();
+// greet();
+// greet();
+
+// Exercise 2 — Greeting With Name
+
+// function greetStudent(name){
+//     console.log("hello "+ name)
+// }
+// greetStudent("Aman");
+// greetStudent("jashan");
+// greetStudent("simran");
+
+// Exercise 3 — Add Two Numbers
+
+
+// function add (a ,b){
+//     return a+b;
+// }
+// let result= add(125 ,375 )
+
+// console.log (result)
+
+// Exercise 4 — Basic Calculator Functions
+
+//  function add (a ,b){
+//     return a+b;
+// }
+// var result= add(10 ,5 )
+
+// console.log (result)
+
+
+
+//  function subtract (a ,b){
+//     return a-b;
+// }
+// var result= subtract(10 ,5 )
+
+// console.log (result)
+
+
+//  function multiply (a ,b){
+//     return a*b;
+// }
+// var result= multiply(10 ,5 )
+
+// console.log (result)
+
+
+//  function divide (a ,b){
+//     return a/b;
+// }
+// var result= divide(10 ,5 )
+
+// console.log (result)
+
+
+
+//  function remainder (a ,b){
+//     return a%b;
+// }
+// var result= remainder(10 ,5 )
+
+// console.log (result)
+
+// Exercise 5 — Even or Odd
+
+// function checkNumber(number) {
+//         if (number%2==0){
+//          return "this is even number";
+//         }
+//         else{
+//             return"this is odd number"
+//         }
+
+// }
+// let result = checkNumber(44)
+// console.log(result)
+
+
+// Exercise 6 — Largest of Two Numbers
+
+// function findLargest(a,b) {
+//         if (a>b){
+//          return a+" is largest number"
+//         }
+//         else if (b>a){
+//          return b+"is the largest number"
+//         }
+//         else{
+//             return "Both are equal"
+//         }
+
+// }
+// let result = findLargest(30,40)
+// console.log (result)
+
+
+// Exercise 7 — Age Eligibility
+
+// function checkVotingEligibility(age) {
+//     if (age >=18){
+//         return "you are eligible for vote"
+//     }
+//     else if (age >0 ){
+//         return "Not Eligible to Vote" 
+//     }
+//     else {
+//         return "invalid age"
+//     }
+
+// }
+// let checkAge =checkVotingEligibility(45);
+// console.log(checkAge)
+
+
+// Exercise 8 — Grade Calculator
+
+// function calculateGrade(marks) {
+
+//     if (marks > 0 && marks <= 100) {
+
+//         if (marks >= 91 && marks <= 100 ) {
+//             return "A++";
+//         }
+//         else if (marks >= 80&& marks <= 90) {
+//             return "A";
+//         }
+//         else if (marks >= 70 && marks <= 80) {
+//             return "B";
+//         }
+//         else if (marks >= 60&& marks <= 70) {
+//             return "C";
+//         }
+//         else if (marks >= 50&& marks <= 60) {
+//             return "D";
+//         }
+//         else {
+//             return "Fail";
+//         }
+
+//     }
+//     else {
+//         return "Invalid marks";
+//     }
+// }
+
+// let checkMarks = calculateGrade(61);
+
+// console.log(checkMarks);
+
+// Exercise 9 — Multiplication Table Function
+
+// function printTable(number) {
+//     for (let i = 0; i <= 10; i++) {
+//         console.log(number + "*" + i + "=" + (number*i));
+//     }
+// }
+// printTable(12);
+
+
+// Exercise 10 — Sum From 1 to N
+
+// function calculateSum(limit) {
+//     let sum =0;
+//         for (let i = 0; i <= limit ; i++) {
+//             sum=sum+i
+// }
+// return sum
+
+// }
+// let result = calculateSum(100)
+// console.log(result)
+
+
+// function factorial(number) {
+//     let factorial = 1;
+//           for (let i = 1; i <= number ; i++) {
+//              factorial = factorial*i
+//           }
+
+//           return factorial
+
+
+// }
+// const result = factorial(5)
+// console.log (result)
+
+
+
+// Exercise 12 — Prime Number Checker
+
+// function isPrime(number) {
+
+//     if (number < 2) {
+//         return "Not a Prime number";
+//     }
+
+//     for (let i = 2; i < number; i++) {
+
+//         if (number % i === 0) {
+//             return "Not a Prime number";
+//         }
+//     }
+
+//     return "Prime number";
+// }
+
+// let checkNumber = isPrime(100);
+
+// console.log(checkNumber);
+
+
+// Exercise 13 — Salary Calculator
 
 
