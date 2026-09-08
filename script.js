@@ -2351,3 +2351,204 @@
 // Exercise 13 — Salary Calculator
 
 
+// function calculateSalary(
+//     basicSalary,
+//     bonus,
+//     allowance,
+//     tax
+// ) {
+//     let grossSalary = basicSalary + bonus + allowance;
+
+//     let netSalary = grossSalary - tax;
+
+//     return netSalary;
+// }
+
+
+// function salaryCategory(netSalary) {
+
+//     if (netSalary < 30000) {
+//         return "Low Salary";
+//     }
+//     else if (netSalary >= 30000 && netSalary <= 59999) {
+//         return "Average Salary";
+//     }
+//     else if (netSalary >= 60000 && netSalary <= 99999) {
+//         return "Good Salary";
+//     }
+//     else {
+//         return "High Salary";
+//     }
+// }
+
+
+// let netSalary = calculateSalary(50000, 5000, 10000, 5000);
+
+// let category = salaryCategory(netSalary);
+
+// console.log("Net Salary:", netSalary);
+// console.log("Salary Category:", category);
+
+
+// Exercise 14 — Student Result System
+
+// function findPercentage(
+//     english,
+//     maths,
+//     science,
+//     computer,
+//     punjabi
+// ) {
+//     let total = english + maths + science + computer + punjabi;
+//     return total / 500 * 100;
+// }
+
+
+// function checkGrade(percentage) {
+
+//     if (percentage >= 90) {
+//         return "A+";
+//     }
+//     else if (percentage >= 80) {
+//         return "A";
+//     }
+//     else if (percentage >= 70) {
+//         return "B";
+//     }
+//     else if (percentage >= 60) {
+//         return "C";
+//     }
+//     else if (percentage >= 50) {
+//         return "D";
+//     }
+//     else {
+//         return "Fail";
+//     }
+// }
+
+
+// function checkScholarship(percentage) {
+
+//     if (percentage >= 90) {
+//         return "Full Scholarship";
+//     }
+//     else if (percentage >= 80) {
+//         return "Partial Scholarship";
+//     }
+//     else {
+//         return "No Scholarship";
+//     }
+// }
+
+
+// let percentage = findPercentage(67, 78, 98, 65, 45);
+
+// let grade = checkGrade(percentage);
+
+// let scholarship = checkScholarship(percentage);
+
+// console.log("Percentage:", percentage);
+// console.log("Grade:", grade);
+// console.log("Scholarship Status:", scholarship);
+
+
+// Exercise 15 — Complete Banking System
+// var balance = 50000;
+
+
+// function deposit(currentBalance, amount) {
+
+//     if (amount > 0) {
+//         currentBalance = currentBalance + amount;
+//         return currentBalance;
+//     }
+//     else {
+//         return "Invalid Amount";
+//     }
+// }
+
+
+// function withdraw(currentBalance, amount) {
+
+//     if (amount <= 0) {
+//         return "Invalid Amount";
+//     }
+//     else if (amount > currentBalance) {
+//         return "Insufficient Balance";
+//     }
+//     else {
+//         return currentBalance - amount;
+//     }
+// }
+
+
+// function checkBalance(balance) {
+
+//     console.log("Current Balance:", balance);
+// }
+
+
+
+// function balanceCategory(balance) {
+
+//     if (balance >= 50000) {
+//         return "Healthy Balance";
+//     }
+//     else if (balance >= 10000) {
+//         return "Normal Balance";
+//     }
+//     else {
+//         return "Low Balance";
+//     }
+// }
+
+
+// balance = deposit(balance, 20000);
+// checkBalance(balance);
+
+
+// balance = withdraw(balance, 15000);
+// checkBalance(balance);
+
+
+// balance = deposit(balance, 10000);
+// checkBalance(balance);
+
+
+
+// balance = withdraw(balance, 25000);
+// checkBalance(balance);
+
+
+
+// let category = balanceCategory(balance);
+
+
+
+// console.log("==========================");
+// console.log("       BANK SUMMARY");
+// console.log("==========================");
+
+// console.log("Final Balance:", balance);
+// console.log("Balance Category:", category);
+
+// console.log("==========================");
+
+
+
+// function canWithdraw(balance, amount) {
+
+//     if (amount <= balance) {
+//         return true;
+//     }
+//     else {
+//         return false;
+//     }
+// }
+
+
+// // Test canWithdraw
+// let result = canWithdraw(balance, 33000);
+
+// console.log("Can Withdraw :", result);
+
