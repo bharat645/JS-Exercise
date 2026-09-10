@@ -344,7 +344,7 @@ switch (option) {
                         console.log(" Account Status : " + accountActive)
                         console.log("====================================")
                 }
-            } while (menuoption !== 8)
+            } while (menuoption !== 8);
         }
 
         break;
