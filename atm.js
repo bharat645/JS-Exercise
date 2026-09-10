@@ -101,19 +101,19 @@ function getBalanceCategory(balance) {
         console.log("→ Very Low Balance")
         return balance
     }
-    else if (balance <= 5000) {
+    else if (balance <= 5000 || balance <=19999) {
         console.log("→ Low Balance")
         return balance
     }
-    else if (balance <= 20000) {
+    else if (balance <= 20000|| balance <= 49999 ) {
         console.log("→ Normal Balance")
         return balance
     }
-    else if (balance <= 50000) {
+    else if (balance <= 50000 || balance <= 99999) {
         console.log("→ Healthy Balance")
         return balance
     }
-    else if (balance <= 100000) {
+    else  {
         console.log("→ Premium Balance")
         return balance
     }
@@ -121,45 +121,37 @@ function getBalanceCategory(balance) {
 }
 function calculator(firstnumber, secondnumber, operator) {
     switch (operator) {
+
         case 1:
-            result = firstnumber + secondnumber
-            console.log("first number : " + firstnumber)
-            console.log("second number : " + secondnumber)
-            console.log("result : " + result)
-            break;
+            result = firstnumber + secondnumber;
+            return result
+
         case 2:
-            result = firstnumber - secondnumber
-            console.log("first number : " + firstnumber)
-            console.log("second number : " + secondnumber)
-            console.log("result : " + result)
-            break;
+            result= firstnumber - secondnumber;
+            return result
+
         case 3:
-            result = firstnumber * secondnumber
-            console.log("first number : " + firstnumber)
-            console.log("second number : " + secondnumber)
-            console.log("result : " + result)
-            break;
+
+            result= firstnumber * secondnumber;
+            return result
+
         case 4:
-            result = firstnumber / secondnumber
-            console.log("first number : " + firstnumber)
-            console.log("second number : " + secondnumber)
-            console.log("result : " + result)
-            break;
+            result= firstnumber / secondnumber;
+            return result
+
         case 5:
-            result = firstnumber % secondnumber
-            console.log("first number : " + firstnumber)
-            console.log("second number : " + secondnumber)
-            console.log("result : " + result)
-            break;
+
+            result=firstnumber % secondnumber;
+            return result
+
         default:
-            console.log("invalid Number")
-            break;
+            return "Invalid operator";
     }
 
+
 }
-function showTransactionCount(count) {
-    transactionCount = depositsCount + withdrawCount
-    console.log(transactionCount)
+function showTransactionCount(transactionCount) {
+    console.log("transactionCount", (transactionCount))
 
 
 }
@@ -173,7 +165,9 @@ console.log("2. exit")
 console.log("====================================")
 
 let option = 1;
-for ( )
+// for (let session = 1; session <= 2; session++) {
+//     console.log("ATM Session " + session);
+//     option = Number(prompt("Enter ATM Option:"));
 switch (option) {
     case 1:
         if (accountActive === false) {
@@ -235,115 +229,125 @@ switch (option) {
 
 
 
+            let menuoption;
+            do {
+                menuoption = Number(prompt("Enter the Menu option:"));
+                if (menuoption < 1 || menuoption > 8) {
+                    console.log("Invalid Option");
+                    console.log("Please Select Again");
 
-            let menuoption = Number(prompt("Enter the Menu option:"));
-do {
-            switch (menuoption) {
+                    continue;
+                }
+                switch (menuoption) {
 
 
-                case 1:
-        console.log("Current Balance: ", balance)
+                    case 1:
+                        console.log("Current Balance: ", balance)
+                        break;
+                    case 2:
+                        let depositAmount = Number(
+                            prompt("Enter Deposit Amount:")
+                        );
+
+                        balance = deposit(balance, depositAmount);
+                        break;
+
+                    case 3:
+                        let WithdrawAmount = Number(
+                            prompt("Enter Withdrawal Amount:")
+                        );
+
+                        balance = withdraw(balance, WithdrawAmount);
+                        break;
+
+                    case 4:
+
+                        console.log("====================================")
+                        console.log("           Fast Cash")
+                        console.log("====================================")
+                        console.log("1. 500 ")
+                        console.log("2. 1000")
+                        console.log("3. 2000")
+                        console.log("4. 5000")
+                        console.log("5. 10000")
+                        console.log("====================================")
+
+
+                        let fastoption = Number(prompt("Enter the fast cash option:"));
+
+                        switch (fastoption) {
+                            case 1:
+
+                                balance = withdraw(balance, 500);
+                                break;
+                            case 2:
+
+                                balance = withdraw(balance, 1000);
+                                break;
+
+                            case 3:
+                                balance = withdraw(balance, 2000);
+                                break;
+
+                            case 4:
+                                balance = withdraw(balance, 5000);
+                                break;
+
+                            case 5:
+                                balance = withdraw(balance, 10000);
+                                break;
+                            default:
+                                console.log("invalid Option")
+
+                                break;
+                        }
+                        break;
+                    case 5:
+                        console.log("balance " + balance)
+                        console.log("Category")
+                        getBalanceCategory(balance)
+                        break;
+
+                    case 6:
+
+                        console.log("Total Successful Transactions: " + transactionCount)
+                        break;
+                    case 7:
+                        console.log("====================================")
+                        console.log("           MINI CALCULATOR")
+                        console.log("====================================")
+                        console.log("1. Addition ")
+                        console.log("2. Subtraction")
+                        console.log("3. Multiply")
+                        console.log("4. division")
+                        console.log("5. modulus")
+                        console.log("====================================")
+                        let firstnumber = Number(prompt("Enter the first number:"));
+                        console.log(" first number:", firstnumber)
+                        let secondnumber = Number(prompt("Enter the second number:"));
+                        console.log("second number:", secondnumber)
+                        let operator = Number(prompt("Enter the operator:"));
+                        console.log("operator:", operator)
+                        let result = calculator(firstnumber, secondnumber, operator)
+                        console.log("result :" + result)
+                        break;
+
+
+                    case 8:
+                        console.log("====================================")
+                        console.log("             SESSION SUMMARY")
+                        console.log("====================================")
+                        console.log("Final Balance : " + balance)
+                        console.log("Successful Transactions : " + transactionCount)
+                        console.log("Category")
+                        getBalanceCategory(balance)
+                        console.log(" Account Status : " + accountActive)
+                        console.log("====================================")
+                }
+            } while (menuoption !== 8)
+        }
+
         break;
     case 2:
-        let depositAmount = Number(
-            prompt("Enter Deposit Amount:")
-        );
-
-        balance = deposit(balance, depositAmount);
-        break;
-
-    case 3:
-        let WithdrawAmount = Number(
-            prompt("Enter Withdrawal Amount:")
-        );
-
-        balance = withdraw(balance, WithdrawAmount);
-        break;
-
-    case 4:
-
-        console.log("====================================")
-        console.log("           Fast Cash")
-        console.log("====================================")
-        console.log("1. 500 ")
-        console.log("2. 1000")
-        console.log("3. 2000")
-        console.log("4. 5000")
-        console.log("5. 10000")
-        console.log("6. Back")
-
-        let fastoption = Number(prompt("Enter the Menu option:"));
-
-        switch (fastoption) {
-            case 1:
-
-                balance = withdraw(balance, 500);
-                break;
-            case 2:
-
-                balance = withdraw(balance, 1000);
-                break;
-
-            case 3:
-                balance = withdraw(balance, 2000);
-                break;
-
-            case 4:
-                balance = withdraw(balance, 5000);
-                break;
-
-            case 6:
-                balance = withdraw(balance, 10000);
-                break;
-            default:
-                console.log("invalid Option")
-
-                break;
-
-
-        }
-        break;
-    case 5:
-        console.log("balance " + balance)
-        console.log("Category")
-        getBalanceCategory(balance)
-        break;
-
-    case 6:
-
-        console.log("Total Successful Transactions: " + transactionCount)
-        break;
-    case 7:
-        console.log("====================================")
-        console.log("           MINI CALCULATOR")
-        console.log("====================================")
-        console.log("1. Addition ")
-        console.log("2. Subtraction")
-        console.log("3. Multiply")
-        console.log("4. division")
-        console.log("5. modulus")
-        console.log("====================================")
-        let firstnumber = Number(prompt("Enter the first number:"));
-        let secondnumber = Number(prompt("Enter the second number:"));
-        let operator = Number(prompt("Enter the operator:"));
-        break;
-
-
-    case 8:
-        console.log("====================================")
-        console.log("             SESSION SUMMARY")
-        console.log("====================================")
-        console.log("Final Balance : " + balance)
-        console.log("Successful Transactions : "+ transactionCount(count))
-        console.log("Category")
-        getBalanceCategory(balance)
-        console.log(" Account Status : " + accountActive)
-        console.log("====================================")
-}
-        } while (menuoption > 8 )
-        }
-        
-break;
-    case 2:
-console.log("exit")
+        console.log("exit")
 }
