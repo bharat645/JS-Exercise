@@ -165,56 +165,55 @@
 
 // Exercise 10 — Complete Course Enrollment System
 
-// var students = [
-//     "Aman",
-//     "Jashan",
-//     "Simran",
-//     "Rahul",
-//     "Karan"
-// ];
+var students = [
+    "Aman",
+    "Jashan",
+    "Simran",
+    "Rahul",
+    "Karan"
+];
 
-// console.log (students.push("Gurpreet","Arjun"))
-// console.log(students)
-// console.log (students.unshift("Harpreet"))
-// console.log(students)
-// console.log(students.shift())
-// console.log(students.pop())
-
-
-// console.log(students.includes("Simran","Jashan", "Rahul"))
+console.log (students.push("Gurpreet","Arjun"))
+console.log (students.unshift("Harpreet"))
+console.log (students.splice())
+console.log(students.shift())
+console.log(students.pop())
 
 
-// let selectedstudents= students.slice(0,3)
-
-// console.log ("Original Student : ", students);
-// console.log ("Selected students : ", selectedstudents)
+console.log(students.includes("Simran","Jashan", "Rahul"))
 
 
+let selectedstudents= students.slice(0,3)
 
-// console.log(students.reverse())
-
-//  for(let i =0; i< students.length; i++){
-//     console.log ("student"+i+" : "+ students[i])
-//  } 
+console.log ("Original Student : ", students);
+console.log ("Selected students : ", selectedstudents)
 
 
 
+console.log(students.reverse())
 
-// console.log ("================================")
-// console.log ("       Course Enrollment Report")
-// console.log ("================================")
+ for(let i =0; i< students.length; i++){
+    console.log ("student"+i+" : "+ students[i])
+ } 
+
+
+
+
+console.log ("================================")
+console.log ("       Course Enrollment Report")
+console.log ("================================")
  
-// console.log (" Total Students : ", students.length)
-// console.log (" First Student : ", students[0])
-// console.log (" last Student : ", students[5])
-// console.log (" Simran Exists : ", students.includes("Simran"))
-// console.log (" Jashan Exists : ", students.includes("Jashan"))
-// console.log ("Selected student : " , selectedstudents)
-// console.log( "Reversed Students : ", students.reverse())
-// console.log (" All students : ", students)
+console.log (" Total Students : ", students.length)
+console.log (" First Student : ", students[0])
+console.log (" last Student : ", students[5])
+console.log (" Simran Exists : ", students.includes("Simran"))
+console.log (" Jashan Exists : ", students.includes("Jashan"))
+console.log ("Selected student : " , selectedstudents)
+console.log( "Reversed Students : ", students.reverse())
+console.log (" All students : ", students)
 
-// console.log ("================================")
-// console.log ("================================")
+console.log ("================================")
+console.log ("================================")
 
 
 
