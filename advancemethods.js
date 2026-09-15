@@ -11,11 +11,10 @@
 
 // numbers.forEach(function(number){
 //     console.log ("index", number)
+
 // })
 
-// numbers.forEach(function(number){
-//     console.log ("index", number *2 ===0)
-// })
+
 
 // Exercise 3 — map() Double Numbers
 
@@ -159,6 +158,22 @@
 // Exercise 13 — reduce() Largest Number
 
 // var numbers = [45, 89, 23, 145, 67, 201, 99];
+// var smallestNumber = numbers.reduce((sums, number) => {
+//     return number < sums ? number : sums;
+// },);
+
+// console.log("Smallest Number:", smallestNumber); 
+
+
+// var smallestNumber = numbers.reduce((sums, number) => {
+//     return number < sums ? number : sums;
+// },);
+
+// console.log("Largest Number:", smallestNumber); 
+// Expected Output: Smallest Number: 23
+
+// Expected Output: Smallest Number: 23
+
 
 // Exercise 14 — sort() Numbers
 
@@ -238,18 +253,18 @@
 
 // Exercise 17 — Marks Analysis
 
-var marks = [
-    45,
-    78,
-    92,
-    35,
-    88,
-    67,
-    29,
-    95,
-    56,
-    81
-];
+// var marks = [
+//     45,
+//     78,
+//     92,
+//     35,
+//     88,
+//     67,
+//     29,
+//     95,
+//     56,
+//     81
+// ];
 
 
 // var passedmarks =marks.filter((mark) =>{
@@ -279,10 +294,9 @@ var marks = [
 //     return sum + mark ;
 // },0 )
 
-// var average = marks.map(( sum,mark)=>{
-//     sum += mark 
-//      return sum / marks.length ;
-// // } )
+//
+// var averageMarks = totalMarks / marks.length;
+// console.log("Average marks: " + averageMarks);
 // var marksascending = marks.sort((a,b) =>{
 //     return a - b
 // });
@@ -299,7 +313,7 @@ var marks = [
 // console.log(studentscore)
 // console.log(studentpass)
 // console.log(total)
-// console.log(average)
+// console.log(averagemarks)
 // console.log (marksascending)
 // console.log (marksdescending)
 
@@ -351,11 +365,8 @@ var marks = [
 // },0)
 // console.log (totalvalue)
 
-//  var average = prices.map(( sum, price) =>{
-//     sum += price 
-//      return sum / prices.length ;
-// })
-// console.log (average)
+// var averageprice = totalvalue / prices.length;
+// console.log("Average price : " + averageprice);
 
 //  var priceascending = prices.sort((a,b) =>{
 //     return a - b
@@ -563,6 +574,18 @@ var totalMarks = marks.reduce((sum, mark) => sum + mark, 0);
 var averageMarks = totalMarks / marks.length;
 // console.log("Average marks: " + averageMarks);
 
+var smallestNumber = marks.reduce((sums, mark) => {
+    return mark < sums ? mark : sums;
+},);
+
+console.log("Smallest Number:", smallestNumber); 
+
+
+var largestNumber = marks.reduce((sums, mark) => {
+    return mark > sums ? mark : sums;
+},);
+
+console.log("Largest Number:", largestNumber); 
 
 // Part H — sort()
 
@@ -593,6 +616,9 @@ console.log("Average marks: " + averageMarks);
 
 console.log ("80+ students : ", above80.length);
 console.log ("90+  students : ", above90.length);
+console.log("Smallest Number:", smallestNumber); 
+console.log("Largest Number:", smallestNumber); 
+
 
 
 console.log ("Any Student Failed: "+anyfail)
