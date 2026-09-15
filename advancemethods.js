@@ -462,7 +462,7 @@ var marks = [
     29,
     84,
     61,
-    95,
+    96,
     52
 ];
 
@@ -512,7 +512,11 @@ var below50 = marks.filter((mark)=>{
 // Part C — map()
 
 var grace = marks.map((mark)=>{
-    return  mark + 5 
+    return  {
+         marks: student.marks + 5 > 100
+            ? 100
+            : student.marks + 5
+    }
 })
 // console.log ("after grace students : ", grace);
 

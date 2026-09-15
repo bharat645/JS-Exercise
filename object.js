@@ -510,7 +510,11 @@
 // // console.log (averageMarks)
 
 // var gracemark = students.map((student)=>{
-//     return student.marks + 5
+//     return {
+//      marks: student.marks + 5 > 100
+//             ? 100
+//             : student.marks + 5
+// }
 // })
 // // console.log (gracemark)
 
