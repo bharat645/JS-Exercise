@@ -272,23 +272,24 @@
 
 // var navbar =document.getElementById("navbar") 
 // var ul= document.createElement("ul")
-// ul.className.add("navlist")
+// ul.classList.add("navlist")
 // menuItems.forEach((menuItem)=>{
 //     var li = document.createElement("li")
-// li.className.add("navitem")
+// li.classList.add("navitem")
 // var a =document.createElement("a")
 //  a.classList.add("navlink")
 
 // a.innerText = menuItem.title;
-//  a.href = item.url;
+//  a.href = menuItem.url;
 
-//     if (item.title === "Contact") {
+//     if (menuItem.title === "Contact") {
 //         a.setAttribute("target", "_blank");
 //     }
 
 //     li.appendChild(a);
 
 //     ul.appendChild(li);
+    
 // });
 
 // navbar.appendChild(ul);
@@ -736,3 +737,208 @@
 //     adddiv.appendChild(paragraph);
 
 // });
+
+
+
+
+
+// var products = [
+//     { name: "Laptop", price: 50000 },
+//     { name: "Mobile", price: 20000 },
+//     { name: "Headphones", price: 2000 },
+//     { name: "Keyboard", price: 1500 }
+// ];
+
+// var product = document.querySelector("#products-container")
+//  var ul= document.createElement("ul")
+//  products.forEach((product) =>{
+//         var li= document.createElement("li")
+//         li.classList.add("product-item")
+//     var h2= document.createElement("h2")
+//     h2.innerText="Product name "+product.name
+//     var p = document.createElement("p")
+//     p.innerText="Product price "+product.price
+
+// li.appendChild(h2)
+// li.appendChild(p)
+// ul.appendChild(li)
+
+
+//  })
+//  product.appendChild(ul)
+
+
+// var images = [
+//     { src: "laptop.jpg", alt: "Laptop" },
+//     { src: "mobile.jpg", alt: "Mobile" },
+//     { src: "watch.jpg", alt: "Watch" }
+// ];
+
+// var gallery = document.querySelector("#gallery")
+// var li =document.createElement("li")
+//  images.forEach((image) =>{
+//     var img =document.createElement("img")
+//     img.setAttribute("src",image.src)
+//         img.setAttribute("alt",image.alt)
+// img.classList.add("gallery")
+
+// gallery.appendChild(img)
+
+//  })
+
+// var students = [
+//     { name: "Bharat", course: "BCA" },
+//     { name: "Rahul", course: "MCA" },
+//     { name: "Aman", course: "B.Tech" }
+// ];
+
+// var student1 = document.querySelector("#students")
+// students.forEach((student)=>{
+//     var div= document.createElement("div")
+//     div.classList.add("student-card")
+
+//     div.innerText=student.name+ "--"+student.course
+    
+// student1.appendChild(div)
+// })
+// var buttons = [
+//     { text: "Home", color: "blue" },
+//     { text: "About", color: "green" },
+//     { text: "Contact", color: "red" }
+// ];
+
+
+// var buttoncontainer = document.querySelector("#students")
+// buttons.forEach((button)=>{
+//     var btn = document.createElement("button")
+
+// btn.innerText=button.text
+// btn.classList.add("menu-button")
+// btn.style.backgroundColor = button.color;
+
+// buttoncontainer.appendChild(btn)
+// })
+
+// diff between  class name and classList
+
+// let box = document.querySelector("#box");
+// box.classList.add("new-box");
+// box.classList.remove("active");
+
+// box.classList.toggle("dark");
+
+// console.log(box.classList.contains("box"));
+
+
+
+// let btn = document.querySelector("#btn1")
+// let body = document.querySelector("#body")
+
+
+//  btn.addEventListener('click', function (){
+// btn.style.backgroundColor = "blue";
+//     body.style.backgroundColor = "red";
+
+//  })
+
+// let btn = document.querySelector('#btn')
+
+// btn.addEventListener('click',function () {
+// console.log("Button Clicked")
+// })
+
+// let heading = document.querySelector("#mainHeading")
+
+// btn.addEventListener("click",function () {
+//  btn.innerText= "button was clicked"
+
+//  heading.classList.add("active")
+// })
+
+// let input =document.querySelector("#username")
+// let output =document.querySelector("#output")
+// input.addEventListener("input",function(e){
+//     output.innerText="Username : "+e.target.value
+// })
+
+// let btn1= document.querySelectorAll("#btn1")
+// let body= document.getElementsByName("body")
+// btn1.addEventListener("click", function(){
+//     body.style.backgroundColor = "red";
+
+
+// })
+
+
+// let btn = document.querySelector("#btn1")
+// let body = document.querySelector("#body")
+
+
+//  btn.addEventListener('click', function (){
+// btn.style.backgroundColor = "gray";
+//     body.style.backgroundColor = "red";
+
+//  })
+
+//  let btn2 = document.querySelector("#btn2")
+
+
+//  btn2.addEventListener('click', function (){
+// btn2.style.backgroundColor = "gray";
+//     body.style.backgroundColor = "green";
+
+//  })
+//   let btn3 = document.querySelector("#btn3")
+
+
+//  btn3.addEventListener('click', function (){
+// btn3.style.backgroundColor = "gray";
+//     body.style.backgroundColor = "blue";
+
+//  })
+// let buttons = document.querySelectorAll("#btn1");
+
+// buttons.forEach(function(btn) {
+//     btn.addEventListener("click", function(e) {
+//         body.style.backgroundColor = e.target.value;
+//     });
+// });
+
+
+
+
+function updateCart() {
+
+    cartContainer.innerHTML = "";
+
+   
+    cartItems.innerText = cart.length;
+
+    let total = 0;
+
+    cart.forEach(function (product) {
+
+        total = total + product.price;
+
+        let cartItem = document.createElement("p");
+
+        cartItem.innerText =
+            product.name + " - " + product.price;
+
+        cartContainer.appendChild(cartItem);
+    });
+
+    totalAmount.innerText = total;
+}
+
+
+clearCart.addEventListener("click", function () {
+
+    cart = [];
+
+    cartContainer.innerHTML = "";
+
+    cartItems.innerText = "0";
+
+    totalAmount.innerText = "0";
+});
