@@ -22,7 +22,15 @@ email.addEventListener("blur", function () {
         errorusername.innerText = "Name is required";
     }
 });
+password.addEventListener("input", function () {
+     let passwordPattern =
+        /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
 
+    if (!passwordPattern.test(password)) {
+        errorpassword.innerText =
+            "Password must contain uppercase, lowercase, number, special character and 8 characters";
+    }
+});
 
 
 form.addEventListener("submit", function (event) {
@@ -52,10 +60,10 @@ form.addEventListener("submit", function (event) {
         isValid=false
     }
 
-    if (passwordValue.length < 8) {
-        errorpassword.innerText = "Password must be at least 8 characters";
-   isValid=false
-    }
+//     if (passwordValue.length < 8) {
+//         errorpassword.innerText = "Password must be at least 8 characters";
+//    isValid=false
+//     }
 
     let passwordPattern =
         /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
